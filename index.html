@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Turunan Numerik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Turunan Numerik</h1>
+    <form id="calcForm">
+      <label for="fungsi">Fungsi f(x):</label>
+      <input type="text" id="fungsi" name="fungsi" placeholder="Contoh: Math.sin(x) + x*x" required>
+
+      <label for="x">Nilai x:</label>
+      <input type="number" id="x" name="x" required>
+
+      <label for="h">Nilai h:</label>
+      <input type="number" step="any" id="h" name="h" required>
+
+      <label for="metode">Metode:</label>
+      <select id="metode" name="metode">
+        <option value="mundur">Selisih Mundur</option>
+        <option value="pusat">Selisih Pusat</option>
+      </select>
+
+      <button type="submit">Hitung Turunan</button>
+    </form>
+    <div id="hasil"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
